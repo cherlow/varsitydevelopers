@@ -15,9 +15,9 @@ class Task extends Model implements Product
     public function canBuy(Customer $customer,int $quantity=1,bool $force=null):bool{
         return true;
     }
-    public function getAmountProduct(): int
+    public function getAmountProduct(): int 
     {
-return 300;        
+return 10;        
     }
 
     public function getMetaProduct(): ?array

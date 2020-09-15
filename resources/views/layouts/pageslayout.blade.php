@@ -83,17 +83,8 @@
                                     </div>
                                 </div>
                                 
-                                <!-- Language Switcher -->
-                                <div class="footer-row">
-                                    <div class="footer-row-inner">
-                                        <select class="selectpicker language-switcher" data-selected-text-format="count" data-size="5">
-                                            <option selected>English</option>
-                                            <option>Français</option>
-                                            <option>Español</option>
-                                            <option>Deutsch</option>
-                                        </select>
-                                    </div>
-                                </div>
+                              
+                              
                             </div>
     
                         </div>
@@ -177,7 +168,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
-                        © 2018 <strong>Hireo</strong>. All Rights Reserved.
+                        © 2018 <strong>Hustlance</strong>. All Rights Reserved.
                     </div>
                 </div>
             </div>

@@ -58,7 +58,7 @@
 						</li>
 
 						
-                        <li v-if="!auth"><a href="#" class="button ripple-effect" style="color:white">Create a Job</a>
+                        <li v-if="!auth"><a href="#" class="button ripple-effect" style="color:white">Post a Job</a>
 						
 						</li>
 

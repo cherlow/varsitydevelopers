@@ -65,27 +65,11 @@
 
 					<!-- Search Field -->
 					<div class="intro-search-field with-label">
-						<label for ="intro-keywords" class="field-title ripple-effect">What you need done?</label>
+						<label for ="intro-keywords" class="field-title ripple-effect">Task Keywords ?</label>
 						<input id="intro-keywords" type="text" placeholder="e.g. build me a website">
 					</div>
 
-					<!-- Search Field -->
-					<div class="intro-search-field">
-						<select class="selectpicker default" multiple data-selected-text-format="count" data-size="7" title="All Categories" >
-							<option>Admin Support</option>
-							<option>Customer Service</option>
-							<option>Data Analytics</option>
-							<option>Design & Creative</option>
-							<option>Legal</option>
-							<option>Software Developing</option>
-							<option>IT & Networking</option>
-							<option>Writing</option>
-							<option>Translation</option>
-							<option>Sales & Marketing</option>
-						</select>
-					</div>
-
-					<!-- Button -->
+			
 					<div class="intro-search-button">
 						<button class="button ripple-effect" onclick="window.location.href='freelancers-grid-layout-full-page.html'">Search</button>
 					</div>
@@ -107,7 +91,7 @@
 					</li>
 					<li>
 						<strong class="counter">1,232</strong>
-						<span>Freelancers</span>
+						<span>Hustlancers</span>
 					</li>
 				</ul>
 			</div>

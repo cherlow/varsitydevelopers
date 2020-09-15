@@ -4,8 +4,122 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "54cffa31ab58932a01fe6d6f138aa320",
+    "content-hash": "32b970a04753d58e84c9a24cf10f08da",
     "packages": [
+        {
+            "name": "asm89/stack-cors",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asm89/stack-cors.git",
+                "reference": "b9c31def6a83f84b4d4a40d35996d375755f0e08"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asm89/stack-cors/zipball/b9c31def6a83f84b4d4a40d35996d375755f0e08",
+                "reference": "b9c31def6a83f84b4d4a40d35996d375755f0e08",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "symfony/http-foundation": "~2.7|~3.0|~4.0|~5.0",
+                "symfony/http-kernel": "~2.7|~3.0|~4.0|~5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.0 || ^4.8.10",
+                "squizlabs/php_codesniffer": "^2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Asm89\\Stack\\": "src/Asm89/Stack/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander",
+                    "email": "iam.asm89@gmail.com"
+                }
+            ],
+            "description": "Cross-origin resource sharing library and stack middleware",
+            "homepage": "https://github.com/asm89/stack-cors",
+            "keywords": [
+                "cors",
+                "stack"
+            ],
+            "time": "2019-12-24T22:41:47+00:00"
+        },
+        {
+            "name": "barryvdh/laravel-cors",
+            "version": "v0.11.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fruitcake/laravel-cors.git",
+                "reference": "03492f1a3bc74a05de23f93b94ac7cc5c173eec9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fruitcake/laravel-cors/zipball/03492f1a3bc74a05de23f93b94ac7cc5c173eec9",
+                "reference": "03492f1a3bc74a05de23f93b94ac7cc5c173eec9",
+                "shasum": ""
+            },
+            "require": {
+                "asm89/stack-cors": "^1.2",
+                "illuminate/support": "^5.5|^6",
+                "php": ">=7",
+                "symfony/http-foundation": "^3.1|^4",
+                "symfony/http-kernel": "^3.1|^4"
+            },
+            "require-dev": {
+                "laravel/framework": "^5.5",
+                "orchestra/testbench": "3.3.x|3.4.x|3.5.x|3.6.x|3.7.x",
+                "phpunit/phpunit": "^4.8|^5.2|^7.0",
+                "squizlabs/php_codesniffer": "^2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.11-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Barryvdh\\Cors\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Barryvdh\\Cors\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "Adds CORS (Cross-Origin Resource Sharing) headers support in your Laravel application",
+            "keywords": [
+                "api",
+                "cors",
+                "crossdomain",
+                "laravel"
+            ],
+            "time": "2019-08-28T11:27:11+00:00"
+        },
         {
             "name": "bavix/laravel-wallet",
             "version": "3.3.0",
@@ -1345,6 +1459,62 @@
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
+            "name": "jivesh/laravel-slack",
+            "version": "2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gahlawat/laravel-slack.git",
+                "reference": "5bacf661bbf7a0796b792259b709925454e5ec71"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gahlawat/laravel-slack/zipball/5bacf661bbf7a0796b792259b709925454e5ec71",
+                "reference": "5bacf661bbf7a0796b792259b709925454e5ec71",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.3"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.6",
+                "phpunit/phpunit": "^7.0",
+                "squizlabs/php_codesniffer": "^3.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Gahlawat\\Slack\\SlackServiceProvider"
+                    ],
+                    "aliases": {
+                        "Slack": "Gahlawat\\Slack\\Facade\\Slack"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Gahlawat\\Slack\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jivesh Gahlawat",
+                    "email": "jiveshsg@gmail.com"
+                }
+            ],
+            "description": "A minimalist laravel integration for Slack",
+            "homepage": "https://gahlawat.github.io/laravel-slack",
+            "keywords": [
+                "laravel",
+                "slack"
+            ],
+            "time": "2018-04-04T07:50:09+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v5.8.32",
             "source": {
@@ -2274,6 +2444,55 @@
                 "side-channel resistant"
             ],
             "time": "2019-09-12T12:05:58+00:00"
+        },
+        {
+            "name": "paypal/rest-api-sdk-php",
+            "version": "1.14.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paypal/PayPal-PHP-SDK.git",
+                "reference": "72e2f2466975bf128a31e02b15110180f059fc04"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paypal/PayPal-PHP-SDK/zipball/72e2f2466975bf128a31e02b15110180f059fc04",
+                "reference": "72e2f2466975bf128a31e02b15110180f059fc04",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.3.0",
+                "psr/log": "^1.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PayPal": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "PayPal",
+                    "homepage": "https://github.com/paypal/rest-api-sdk-php/contributors"
+                }
+            ],
+            "description": "PayPal's PHP SDK for REST APIs",
+            "homepage": "http://paypal.github.io/PayPal-PHP-SDK/",
+            "keywords": [
+                "payments",
+                "paypal",
+                "rest",
+                "sdk"
+            ],
+            "time": "2019-01-04T20:04:25+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -3437,6 +3656,81 @@
                 "uri"
             ],
             "time": "2018-01-15T21:00:49+00:00"
+        },
+        {
+            "name": "samerior/mobile-money",
+            "version": "2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/samerior/mobile-money.git",
+                "reference": "04e68821afc7cd9234ab56dfbf970b7dd525beba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/samerior/mobile-money/zipball/04e68821afc7cd9234ab56dfbf970b7dd525beba",
+                "reference": "04e68821afc7cd9234ab56dfbf970b7dd525beba",
+                "shasum": ""
+            },
+            "require": {
+                "barryvdh/laravel-cors": "^0.11.2",
+                "guzzlehttp/guzzle": "^6.3",
+                "illuminate/support": "~5.5",
+                "jivesh/laravel-slack": "^2.1",
+                "php": ">=7.1.3"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.2",
+                "orchestra/testbench": "~3.6",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Samerior\\MobileMoney\\MobileMoneyServiceProvider"
+                    ],
+                    "aliases": {
+                        "B2C": "Samerior\\MobileMoney\\Mpesa\\Facades\\B2C",
+                        "Identity": "Samerior\\MobileMoney\\Mpesa\\Facades\\Identity",
+                        "Registrar": "Samerior\\MobileMoney\\Mpesa\\Facades\\Registrar",
+                        "STK": "Samerior\\MobileMoney\\Mpesa\\Facades\\STK"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Samerior\\MobileMoney\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel Dervis",
+                    "email": "sam@samerior.com",
+                    "homepage": "https://samerior.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Mobile payments API - Kenya",
+            "homepage": "https://github.com/samerior/mobile-money",
+            "keywords": [
+                "api",
+                "equitel",
+                "equity",
+                "mobile money",
+                "mpesa",
+                "payments",
+                "pesa",
+                "samerior group",
+                "samueldervis"
+            ],
+            "time": "2019-03-02T19:18:03+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -5038,6 +5332,7 @@
                 "psr",
                 "psr-7"
             ],
+            "abandoned": "laminas/laminas-diactoros",
             "time": "2019-07-10T16:13:25+00:00"
         }
     ],

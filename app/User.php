@@ -3,7 +3,10 @@
 namespace App;
 
 use Bavix\Wallet\Interfaces\Customer;
+use Bavix\Wallet\Interfaces\WalletFloat;
 use Bavix\Wallet\Traits\CanPay;
+use Bavix\Wallet\Traits\CanPayFloat;
+use Bavix\Wallet\Traits\HasWalletFloat;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -11,7 +14,7 @@ use Laravel\Passport\HasApiTokens;
 
 class User extends Authenticatable implements Customer
 {
-    use HasApiTokens, Notifiable,CanPay;
+    use HasApiTokens, Notifiable,CanPayFloat;
 
     /**
      * The attributes that are mass assignable.
@@ -28,7 +31,7 @@ class User extends Authenticatable implements Customer
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token', 
     ];
 
     /**
@@ -55,5 +58,8 @@ class User extends Authenticatable implements Customer
     }
     public function bids(){
         return $this->hasMany('App\Bid');
+    }
+    public function favorites(){
+        return $this->hasMany('App\Favorite');
     }
 }

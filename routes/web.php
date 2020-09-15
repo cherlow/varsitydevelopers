@@ -26,13 +26,18 @@ Route::get('/newtask', 'TaskController@index');
 Route::get('/managetasks', 'TaskController@managetasks');
 Route::get('/tasks/{slug}', 'TaskController@show');
 Route::get('/hustlancers/{name}', 'PagesController@singlehustlancer');
-Route::get('/trial', 'UsersController@trial');
+Route::get('/trial', 'UsersController@trial')->name('trial');
 Route::get('/mybids', 'BidController@index');
 Route::get('/bookmarks', 'BookmarkController@index');
 Route::get('/reviews', 'ReviewController@index');
 Route::get('/transactions', 'ReviewController@transactions');
 Route::get('/myjobs', 'JobController@index');
 Route::get('/newjoblisting', 'JobController@create');
+Route::get('/payment', 'PaymentController@index');
+Route::get('/status', 'PaymentController@status')->name('status');
+Route::post('/payment/add-funds/paypal', 'PaymentController@payWithpaypal');
+Route::get('/payout', 'PaymentController@payout');
+
 
 
 
